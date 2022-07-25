@@ -35,5 +35,50 @@
 ![ScreenShot_19_07_2022_20_48_25](https://user-images.githubusercontent.com/19933457/180839816-7a3fe48c-e072-4a0f-8abd-bb973b5a192b.png)
 ![ScreenShot_19_07_2022_20_49_30](https://user-images.githubusercontent.com/19933457/180839833-7b9d9db9-b515-410f-9062-1667199b0117.png)
 
+### Instead of formating the disks as ext4 I format them as xfs
+`sudo mkfs -t xfs /dev/webdata-vg/apps-lv`
+`sudo mkfs -t xfs /dev/webdata-vg/logs-lv`
+`sudo mkfs -t xfs /dev/webdata-vg/opt-lv`
+
+### I Create a mount points on /mnt directory for the logical volumes as follow:
+#### Mount lv-apps on /mnt/apps – To be used by webservers
+#### Mount lv-logs on /mnt/logs – To be used by webserver logs
+#### Mount lv-opt on /mnt/opt – To be used by Jenkins server
+
+![ScreenShot_19_07_2022_20_59_28](https://user-images.githubusercontent.com/19933457/180841390-8c6e7cab-b959-461f-ba57-3beb3d57f8a4.png)
+![ScreenShot_19_07_2022_21_00_36](https://user-images.githubusercontent.com/19933457/180841401-78c17f64-017e-4f00-bc44-551979ee17c8.png)
+
+### I Install NFS server, I configure it to start on reboot and I make sure it is up and running
+
+`sudo yum -y update`
+![ScreenShot_20_07_2022_09_00_27](https://user-images.githubusercontent.com/19933457/180845098-88417761-bd1d-498e-91b4-3056a3f0f3db.png)
+
+`sudo yum install nfs-utils -y`
+![ScreenShot_20_07_2022_09_00_27](https://user-images.githubusercontent.com/19933457/180845098-88417761-bd1d-498e-91b4-3056a3f0f3db.png)
+
+`sudo systemctl start nfs-server.service`
+![ScreenShot_20_07_2022_09_00_57](https://user-images.githubusercontent.com/19933457/180845123-6dd98b36-8fa4-4d4a-b086-0d4d3cb9f5e5.png)
+
+`sudo systemctl enable nfs-server.service`
+![ScreenShot_20_07_2022_09_01_18](https://user-images.githubusercontent.com/19933457/180845138-b90f0c0a-ba1d-4d3a-8bf3-1222815b9d39.png)
+
+`sudo systemctl status nfs-server.service`
+![ScreenShot_20_07_2022_09_01_38](https://user-images.githubusercontent.com/19933457/180845193-b25aad3b-aa55-4c93-be96-fb8ea2fa1c23.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
