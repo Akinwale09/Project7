@@ -13,6 +13,27 @@
 #### 5. Programming Language: PHP
 #### 6. Code Repository: GitHub
 
-### I Spin up all the required servers, 1 NFS Server, 3 Webserver and 1 Database server as below:
+### I Spin up all the required servers, 1 NFS Red Hat Server, 3 Red Hat Webserver and 1 Ubuntu Database server as below:
 
-![Server](https://user-images.githubusercontent.com/19933457/180836461-551657d2-1353-4e3d-bc59-28d2f4e088bc.png)
+![Server](https://user-images.githubusercontent.com/19933457/180839468-c5f2a1b9-0238-4fab-982f-28c0a48b9119.png)
+
+![ScreenShot_19_07_2022_20_09_09](https://user-images.githubusercontent.com/19933457/180839508-ff7b20e4-ffa4-4967-8131-00ae59976163.png)
+
+### Based on my LVM experience from Project 6, I Configure LVM on the Server.
+
+![ScreenShot_19_07_2022_20_11_00](https://user-images.githubusercontent.com/19933457/180839608-f2a0f21e-0971-4b73-90d4-eb43571c114b.png)
+![ScreenShot_19_07_2022_20_25_12](https://user-images.githubusercontent.com/19933457/180839621-fb469039-aa7a-4173-99d8-0fae0a1357b0.png)
+![ScreenShot_19_07_2022_20_30_15](https://user-images.githubusercontent.com/19933457/180839633-bc17c1ed-f2f5-4b31-82c7-0bb23c469f84.png)
+![ScreenShot_19_07_2022_20_35_09](https://user-images.githubusercontent.com/19933457/180839663-ca017272-3e0d-4713-a699-62ffb3b76844.png)
+![ScreenShot_19_07_2022_20_36_01](https://user-images.githubusercontent.com/19933457/180839705-53479700-abcf-443f-87d1-7ae73221fa14.png)
+![ScreenShot_19_07_2022_20_37_51](https://user-images.githubusercontent.com/19933457/180839715-1cbebf33-294a-47e8-8dde-d1a845d043cb.png)
+![ScreenShot_19_07_2022_20_38_31](https://user-images.githubusercontent.com/19933457/180839733-95263dc9-6650-4604-9bcc-c33fe0e74fd3.png)
+![ScreenShot_19_07_2022_20_41_42](https://user-images.githubusercontent.com/19933457/180839749-368e7a36-d1cd-48ed-9870-f7825474cf9b.png)
+
+![ScreenShot_19_07_2022_20_43_21](https://user-images.githubusercontent.com/19933457/180839790-75663f2e-e95e-4e93-970e-b8d3d0e31f8c.png)
+
+![ScreenShot_19_07_2022_20_48_25](https://user-images.githubusercontent.com/19933457/180839816-7a3fe48c-e072-4a0f-8abd-bb973b5a192b.png)
+![ScreenShot_19_07_2022_20_49_30](https://user-images.githubusercontent.com/19933457/180839833-7b9d9db9-b515-410f-9062-1667199b0117.png)
+
+
+
